@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <main>
+            <div class="logo only-desktop">
+                <img src="assets/logo.png" alt="Logo quicklist">
+            </div>
+            
+            <a href="#" class="back">
+                <i class="hgi hgi-stroke hgi-arrow-left-02"></i>
+                Voltar
+            </a>
+
+            <h1>Compras da semana</h1>
+            
+            <form>
+                <input type="text" name="item" id="item" placeholder="Adicione um novo item" />
+                <button type="submit">Adicionar item</button>
+            </form>
+
+            <ul class="shopping-list">
+                
+            </ul>
+
+            <div class="alert hidden">
+                <img src="assets/icons/warning-circle-filled.svg" alt="Ícone de aviso">
+
+                <p>O item foi removido da lista</p>
+
+                <div class="close">
+                    <img src="assets/icons/delete-small.svg" alt="Ícone de fechar">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
